@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background-color: rgba(255, 56, 69, 0.9);
+  padding: 0.5rem 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+.main-btn:hover {
+  background-color: hsl(356deg, 100%, 61%);
+}
+
+.s-title {
+  color: hsl(356deg, 100%, 61%);
+  text-transform: uppercase;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-heading {
+  color: hsl(226deg, 46%, 35%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 44px;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .main-heading {
+    font-size: 48px;
+  }
+}
+
+.to-top-btn {
+  color: #fff;
+  opacity: 0;
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 3rem;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  bottom: 1rem;
+  background-color: hsl(356deg, 100%, 61%);
+  transition: 0.3s;
+}
+.to-top-btn:hover {
+  background-color: hsl(356deg, 97%, 44%);
+  cursor: pointer;
+}
+
+/* Start Hero */
+section {
+  position: relative;
+  /* Start Navbar */
+}
+section .illustration {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  width: 40%;
+  z-index: -1;
+}
+section .navbar {
+  padding-top: 2.2rem;
+}
+section .navbar .navbar-nav a {
+  color: hsl(226deg, 46%, 35%);
+}
+section .navbar .lang-btn {
+  color: hsl(226deg, 46%, 35%);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 1rem;
+}
+section .navbar .lang-btn svg {
+  transition: 0.3s;
+}
+section .navbar .lang-btn svg.flip {
+  transform: rotate(180deg);
+}
+section .navbar .lang-btn .langs {
+  display: none;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  box-shadow: 0 4px 8px 0 hsl(0deg, 0%, 80%);
+}
+section .navbar .lang-btn .langs.open {
+  display: block;
+}
+section .navbar .lang-btn .langs > * {
+  padding: 0.3rem 1rem;
+}
+section .navbar .lang-btn .langs .active {
+  background-color: hsl(226deg, 46%, 35%);
+  color: hsl(204deg, 83%, 98%);
+}
+section .navbar .lang-btn .langs > div:hover:not(.active) {
+  background-color: rgba(48, 67, 130, 0.2);
+}
+section .navbar .contact-btn {
+  display: flex;
+  flex-direction: row;
+  color: hsl(356deg, 100%, 61%);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 8px 0 hsl(0deg, 0%, 90%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+section .navbar .contact-btn svg {
+  margin-left: 0.5rem;
+}
+section .navbar .contact-btn:hover {
+  box-shadow: 0 4px 8px 0 hsl(0deg, 0%, 80%);
+}
+section .header .row {
+  flex-direction: row;
+}
+section .header .text h2 {
+  font-weight: 600;
+  color: hsl(226deg, 46%, 35%);
+  font-size: 65px;
+}
+section .header .text span {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: 600;
+}
+
+/* End Hero */
+/* Start Services */
+.services {
+  position: relative;
+}
+.services > img {
+  position: absolute;
+  z-index: -1;
+}
+.services .left {
+  left: 0;
+}
+.services .right {
+  right: -3rem;
+}
+.services .main-btn {
+  font-size: 14px;
+}
+.services .text h2 {
+  font-weight: 600;
+  font-size: 45px;
+  color: hsl(226deg, 46%, 35%);
+}
+.services .box {
+  box-shadow: 0 4px 8px 0 hsl(0deg, 0%, 85%);
+  padding: 2rem 2.5rem;
+  width: 85%;
+  background-color: #fff;
+}
+@media (max-width: 1199px) {
+  .services .box {
+    width: 100%;
+  }
+}
+.services .box h3 {
+  font-size: 27px;
+  font-weight: 600;
+  color: hsl(226deg, 46%, 35%);
+}
+.services .box h3 + P {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* End Services */
+/* Start About Us */
+.about-us .text p {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+/* End About Us */
+/* Start Portfolio */
+.portfolio .image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.portfolio .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 300ms;
+}
+.portfolio .image:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+
+/* End Portfolio */
+/* Start Blog */
+.blog .box {
+  box-shadow: 0 4px 8px 0 hsl(0deg, 0%, 85%);
+  padding: 2rem 2.5rem;
+  color: hsl(226deg, 46%, 35%);
+  position: relative;
+  transition: color 0.3s;
+}
+.blog .box::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: hsl(356deg, 100%, 61%);
+  width: 0%;
+  transition: 0.5s;
+  height: 100%;
+  z-index: -1;
+}
+.blog .box:hover {
+  color: #fff;
+}
+.blog .box:hover .time, .blog .box:hover svg {
+  color: #fff !important;
+}
+.blog .box:hover::before {
+  width: 100%;
+}
+.blog .box h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.blog .box .time {
+  font-size: 14px;
+  color: hsl(0deg, 0%, 70%);
+}
+.blog .box *:not(h3) {
+  font-weight: normal;
+}
+.blog .box svg {
+  font-size: 26px;
+  color: hsl(356deg, 100%, 61%);
+}
+
+/* End Blog */
+/* Start Contact Us */
+.contact-us h2 {
+  font-weight: 600;
+  color: hsl(226deg, 46%, 35%);
+  font-size: 48px;
+}
+.contact-us .input {
+  border: none;
+  background-color: hsl(204deg, 83%, 98%);
+  resize: none;
+  padding: 1rem 1.3rem;
+  width: 100%;
+}
+.contact-us .input::-moz-placeholder {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: 600;
+}
+.contact-us .input:-ms-input-placeholder {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: 600;
+}
+.contact-us .input::placeholder {
+  color: hsl(226deg, 46%, 35%);
+  font-weight: 600;
+}
+.contact-us textarea {
+  height: 120px;
+}
+
+/* End Contact Us */
+/* Start Footer */
+.footer {
+  background-color: hsl(226deg, 46%, 35%);
+}
+.footer h2 {
+  color: hsl(356deg, 100%, 61%);
+  font-weight: 600;
+  font-weight: 48px;
+}
+.footer .links {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .footer .links {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.footer .copyright {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* End Footer *//*# sourceMappingURL=main.css.map */

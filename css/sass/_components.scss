@@ -1,0 +1,54 @@
+
+@use './variables' as *;
+
+.main-btn {
+   background-color: rgba($lightRed, .9);
+   padding: 0.5rem 1.5rem;
+   width: fit-content;
+   cursor: pointer;
+   &:hover {
+      background-color: $lightRed;
+   }
+}
+
+.s-title {
+   color: $lightRed;
+   text-transform: uppercase;
+   font-weight: 600;
+   width: fit-content;
+}
+
+.main-heading {
+   color: $darkBlue;
+   width: fit-content;
+   font: {
+      size: 44px;
+      weight: 600;
+   }
+   @media (min-width: 992px) {
+      font: {
+         size: 48px;
+      }
+   }
+}
+
+.to-top-btn {
+   color: #fff;
+   opacity: 0;
+   font-size: 28px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   position: fixed;
+   right: 3rem;
+   z-index: 4;
+   display: grid;
+   place-items: center;
+   bottom: 1rem;
+   background-color: $lightRed;
+   transition: 0.3s;
+   &:hover {
+      background-color: $lightRedAlt;
+      cursor: pointer;
+   }
+}
